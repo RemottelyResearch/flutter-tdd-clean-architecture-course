@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:meta/meta.dart';
+
 
 import '../../../../core/error/exceptions.dart';
 import '../models/number_trivia_model.dart';
@@ -33,7 +33,7 @@ class NumberTriviaRemoteDataSourceImpl implements NumberTriviaRemoteDataSource {
 
   Future<NumberTriviaModel> _getTriviaFromUrl(String url) async {
     final response = await client.get(
-      url,
+      Uri.parse(url),
       headers: {
         'Content-Type': 'application/json',
       },
