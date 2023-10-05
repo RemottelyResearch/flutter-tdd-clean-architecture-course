@@ -4,6 +4,18 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    // {
+    //   "name": "Flutter",
+    //   "type": "dart",
+    //   "request": "launch",
+    //   "program": "lib/main.dart",
+    //   "args": [
+    //     "-d",
+    //     "chrome",
+    //     "--web-renderer",
+    //     "html"
+    //   ]
+    // },
     {
       "name": "Dart: Run all Tests",
       "type": "dart",
@@ -14,6 +26,6 @@
       "name": "Flutter",
       "request": "launch",
       "type": "dart"
-    }
+    },
   ]
 }

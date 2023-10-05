@@ -1,9 +1,10 @@
 import 'package:clean_architecture_tdd_course/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 
 
 @immutable
-abstract class NumberTriviaState extends Equatable {
+sealed class NumberTriviaState extends Equatable {
   @override
   List<Object> get props => [];
 }

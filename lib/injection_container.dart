@@ -1,3 +1,4 @@
+import 'package:clean_architecture_tdd_course/features/number_trivia/presentation/bloc/number_trivia_state.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
@@ -20,6 +21,7 @@ Future<void> init() async {
   // Bloc
   sl.registerFactory(
     () => NumberTriviaBloc(
+      Empty(),
       concrete: sl(),
       inputConverter: sl(),
       random: sl(),
